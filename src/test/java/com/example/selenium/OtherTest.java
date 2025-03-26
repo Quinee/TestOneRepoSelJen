@@ -7,15 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class SeleniumTest2 {
+public class OtherTest {
 
     private WebDriver driver;
-    private static final Logger logger = LoggerFactory.getLogger(SeleniumTest2.class);
+    private static final Logger logger = LoggerFactory.getLogger(OtherTest.class);
 
     @BeforeClass
     public void setup() {
