@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Quinee/TestOneRepoSelJen.git'
+                git branch: 'main', url: 'https://github.com/Quinee/TestOneRepoSelJen.git'
             }
         }
         stage('Build') {
