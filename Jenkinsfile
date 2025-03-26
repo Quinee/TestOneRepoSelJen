@@ -3,10 +3,7 @@ pipeline {
     tools {
         maven 'MavenJenkins'  // Ensure this matches the name set in "Global Tool Configuration"
     }
-    environment {
-        MAVEN_HOME = "/opt/homebrew/bin/mvn"  // Change this based on your OS
-        PATH = "${MAVEN_HOME}:${PATH}"
-    }
+
 
     stages {
         stage('Checkout') {

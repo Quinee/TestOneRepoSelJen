@@ -57,6 +57,15 @@
                         <include>**/*Tests.java</include>
                     </includes>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>default-test</id>
+                        <phase>test</phase>  <!-- Ensures tests run only during "test" phase -->
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
